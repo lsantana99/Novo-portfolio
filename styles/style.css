@@ -11,17 +11,43 @@
 }
 
 body{
-    height: 100vh;
-    background-image: linear-gradient(to bottom, var(--second), var(--second));
+    min-height: 100vh;
+    background-color: var(--second);
+}
+
+header{
+    background-color: var(--primary);
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.header-desktop{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.name{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.surname{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
 }
 
 .list-menu{
     display: flex;
     gap: 1rem;
-    justify-content: center;
-    background-color: var(--primary);
-    padding: 15px 0;
-    font-weight: 600;
+    align-items: center;
 }
 
 .list-menu li{
@@ -46,27 +72,34 @@ body{
 }
 
 main{
-    max-width: 1200px;
     display: flex;
+    align-items: center;
     justify-content: center;
+    max-width: 1200px;
     margin: 0 auto;
-    color: var(--third);
 }
 
-.img-main{
-    width: 35%;
+
+.img-main,
+.text-main{
+    width: 50%;
 }
 
 .text-main{
-    display: flex;
+   display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 40%;
-    align-items: flex-start;
+    color: var(--primary);
+    justify-self: start;
+    margin-left: -120px;
+    gap: 1rem;
+    align-items: center;
 }
 
-.subtitle-main{
-    display: flex;
-    justify-content: flex-end;
+.text-main h2{
+    color: var(--third);
+    text-transform: uppercase;
 }
+
+
 
