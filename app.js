@@ -1,7 +1,8 @@
 let btnMore = document.querySelector('#more')
+let cardMore = document.querySelector('.cards-inviseble')
+
 
 btnMore.addEventListener('click', () =>{
-    let cardMore = document.querySelector('.cards-inviseble')
-
-    cardMore.style.display = 'block'
+    const aberto = cardMore.classList.toggle('cards-inviseble')
+    btnMore.textContent = aberto ? 'Mostrar mais' : 'Mostrar menos'
 })
