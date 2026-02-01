@@ -1,0 +1,22 @@
+@media(max-width:480px){
+    .header-desktop{
+        display: none;
+    }
+
+    .dropdown{
+        opacity: 1;
+    }
+
+    .container-on{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .all-cards-specialties{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+}

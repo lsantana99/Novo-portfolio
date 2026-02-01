@@ -1,6 +1,6 @@
 let btnMore = document.querySelector('#more')
 let cardMore = document.querySelector('.cards-projects-extra')
-let header = document.querySelector('.header-desktop')
+let header = document.querySelector('header')
 
 btnMore.addEventListener('click', () =>{
     const aberto = cardMore.classList.toggle('hidden')
