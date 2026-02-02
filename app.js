@@ -1,6 +1,9 @@
 let btnMore = document.querySelector('#more')
 let cardMore = document.querySelector('.cards-projects-extra')
 let header = document.querySelector('header')
+let msgName = document.querySelector('#msg-name')
+let msg = document.querySelector('#msg-msg')
+let btnWpp = document.querySelector('#btnWpp')
 
 btnMore.addEventListener('click', () =>{
     const aberto = cardMore.classList.toggle('hidden')
@@ -9,4 +12,8 @@ btnMore.addEventListener('click', () =>{
 
 window.addEventListener('scroll', () => {
     header.classList.toggle('scrolled', window.scrollY > 50)
+})
+
+btnWpp.addEventListener('click', () => {
+    
 })
